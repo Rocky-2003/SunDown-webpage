@@ -242,8 +242,8 @@ nav {
 #page2 #gooey {
   top: 55%;
   left: 28%;
-  width: 30vw;
-  height: 30vw;
+  width: 40vw;
+  height: 40vw;
   border-radius: 50%;
   filter: blur(20px);
   position: absolute;
@@ -264,8 +264,68 @@ nav {
   }
 }
 
+/* * Page  decoration started */
+
 #page3 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #efeae3;
+}
+
+#page3 .project {
+  padding: 3vw 2vw;
+  font-weight: 200;
+  font-size: 1vw;
+  display: flex;
+  align-items: center;
+}
+
+.project .circle {
+  height: 0.5vw;
+  width: 0.5vw;
+  background-color: #fe3f0a;
+  border-radius: 50%;
+  margin: 0.5vw;
+}
+
+#page3 .elem {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  border-bottom: 1px solid rgba(53, 51, 51, 0.603);
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  overflow: hidden;
+}
+
+.elem h2 {
+  font-size: 4vw;
+}
+
+.elem .elem-content {
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  font-weight: 200;
+}
+
+/* * hover effect on elem */
+
+.elem .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #ff9831;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  z-index: 1;
+  transition: all ease 0.3s;
+}
+
+.elem:hover .overlay {
+  top: 0;
 }
