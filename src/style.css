@@ -269,7 +269,8 @@ nav {
 #page3 {
   min-height: 100vh;
   width: 100%;
-  background-color: #efeae3;
+  /* background-color: #efeae3; */
+  background-color: red;
 }
 
 #page3 .project {
