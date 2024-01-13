@@ -1,1 +1,5 @@
 extension
+dist
+.parcel-cache
+extenstion
+node_modules
