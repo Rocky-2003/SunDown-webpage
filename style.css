@@ -1,0 +1,170 @@
+@font-face {
+  font-family: chacha;
+  src: url(./NeueHaasDisplayMediu.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "chacha";
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  position: relative;
+  padding: 0 2vw;
+}
+
+nav {
+  padding: 2vw 0vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+#nav-part2 h4 {
+  padding: 10px 20px;
+  border: 1px solid #00000068;
+  border-radius: 50px;
+  font-weight: 500;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.771);
+  transition: all ease 0.5s;
+  position: relative;
+}
+
+#nav-part2 h4::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.5s;
+  background-color: black;
+}
+
+#nav-part2 h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+#nav-part2 h4 a {
+  color: #0b0b0b;
+  position: relative;
+  z-index: 9;
+}
+#nav-part2 h4:hover a {
+  color: #fff;
+}
+
+#center {
+  display: flex;
+  height: 65vh;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid #0000003c;
+  padding-bottom: 2.5vw;
+}
+
+#left h3 {
+  width: 25vw;
+  font-size: 1.8vw;
+  line-height: 2vw;
+}
+
+#center h1 {
+  font-size: 10vw;
+  line-height: 8vw;
+  text-align: right;
+}
+#page1 video {
+  width: 100%;
+  margin-top: 4vw;
+  border-radius: 20px;
+  position: relative;
+}
+
+#hero-shape {
+  position: absolute;
+  width: 46vw;
+  height: 35vw;
+  right: 0;
+  top: 70vh;
+}
+
+#hero1 {
+  filter: blur(15px);
+  background-color: #fe3f0e;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#hero2 {
+  filter: blur(25px);
+  background-color: #fe3f0e;
+  border-radius: 50%;
+  position: absolute;
+  height: 30vw;
+  width: 30vw;
+  animation-name: anime2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+#hero3 {
+  filter: blur(20px);
+  background-color: linear-gradient(#fe3f0e, #fe3f0a);
+  border-radius: 50%;
+  position: absolute;
+  height: 30vw;
+  width: 30vw;
+  animation-name: anime1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes anime1 {
+  from {
+    transform: translate(55%, -2%);
+  }
+  to {
+    transform: translate(0%, 10%);
+  }
+}
+@keyframes anime2 {
+  from {
+    transform: translate(5%, -5%);
+  }
+  to {
+    transform: translate(-20%, 40%);
+  }
+}
