@@ -1,9 +1,4 @@
-extenstion
-<<<<<<< HEAD
-=======
-.parcel-cache
->>>>>>> working-branch
 dist
 .parcel-cache
+extenstion
 node_modules
-
