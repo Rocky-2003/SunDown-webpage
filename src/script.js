@@ -13,7 +13,7 @@ const scroll = new LocomotiveScroll({
 imgElements.forEach((el) => {
   el.addEventListener("mouseover", function (e) {
     if (el.dataset.img !== e.target.dataset.img) return;
-    image.src = `src/img/${e.target.dataset.img}.png.webp`;
+    image.src = `src/img/${e.target.dataset.img}.png`;
     imageContainer.style.display = "block";
   });
 });
